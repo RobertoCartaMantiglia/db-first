@@ -3,27 +3,27 @@ messe in vendita da un concessionario.
 
 
 
-numero_telaio(id)                    VARCHAR(17)
-marca                                VARCHAR(20)    
-modello                              VARCHAR(20) 
-tipologia_veicolo                    VARCHAR(15)
-data_immatricolazione                DATE
-luogo_immatricolazione               VARCHAR(30)
-prezzo                               FLOAT(10,2)
-condizione_veicolo                   VARCHAR(25)
-km_percorsi                          FLOAT(10,2)
-descrizione                          TEXT
-colore                               VARCHAR(20)
-num_tagliandi                        TINYINT
-interventi                           TEXT
-garanzia                             TINYINT(0, 1)
-sinistri                             TEXT
-tipologia_trasmissione               VARCHAR(15)
-num_porte                            TINYINT
-num_ruote                            TINYINT   
-posti                                TINYINT
-carburante                           VARCHAR(10)                         )
-optional                             VARCHAR(150)
-classe_emissioni                     VARCHAR(6)
+numero_telaio(id)                    VARCHAR(17)                    NOTNULL, UNIQUE
+marca                                VARCHAR(20)                    NOTNULL
+modello                              VARCHAR(20)                    NOTNULL
+data_immatricolazione                DATE                           NOTNULL
+luogo_immatricolazione               VARCHAR(30)                    NOTNULL
+tipologia_veicolo                    VARCHAR(15)                    DEFAULT (AUTOMOBILE)
+prezzo                               FLOAT(10,2)                    DEFAULT (100,00)
+condizione_veicolo                   VARCHAR(25)                    NULL
+km_percorsi                          FLOAT(10,2)                    NOTNULL   
+descrizione                          TEXT                           NULL
+colore                               VARCHAR(20)                    NULL
+num_tagliandi                        TINYINT                        DEFAULT(1)
+interventi                           TEXT                           NULL
+garanzia                             TINYINT(0,1)                   DEFAULT(0)
+sinistri                             TEXT                           DEFAULT(0)
+tipologia_trasmissione               VARCHAR(15)                    NOTNULL
+num_porte                            TINYINT                        NOTNULL
+num_ruote                            TINYINT                        NOTNULL
+posti                                TINYINT                        NOTNULL
+carburante                           VARCHAR(10)                    NOTNULL
+optional                             VARCHAR(150)                   NULL
+classe_emissioni                     TINYINT                        NULL  
 
 
