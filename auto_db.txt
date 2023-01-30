@@ -3,22 +3,27 @@ messe in vendita da un concessionario.
 
 
 
-numero_telaio(id)
-marca
-modello
-tipologia_veicolo
-data_immatricolazione
-luogo_immatricolazione
-prezzo
-condizione_veicolo
-km_percorsi
-tagliandi
-garanzia
-sinistri
-tipologia_trasmissione
-posti
-carburante
-optional
-classe_emissioni
+numero_telaio(id)                    VARCHAR(17)
+marca                                VARCHAR(20)    
+modello                              VARCHAR(20) 
+tipologia_veicolo                    VARCHAR(15)
+data_immatricolazione                DATE
+luogo_immatricolazione               VARCHAR(30)
+prezzo                               FLOAT(10,2)
+condizione_veicolo                   VARCHAR(25)
+km_percorsi                          FLOAT(10,2)
+descrizione                          TEXT
+colore                               VARCHAR(20)
+num_tagliandi                        TINYINT
+interventi                           TEXT
+garanzia                             TINYINT(0, 1)
+sinistri                             TEXT
+tipologia_trasmissione               VARCHAR(15)
+num_porte                            TINYINT
+num_ruote                            TINYINT   
+posti                                TINYINT
+carburante                           VARCHAR(10)                         )
+optional                             VARCHAR(150)
+classe_emissioni                     VARCHAR(6)
 
 
