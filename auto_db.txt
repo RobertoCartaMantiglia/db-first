@@ -8,11 +8,15 @@ marca
 modello
 tipologia_veicolo
 data_immatricolazione
+luogo_immatricolazione
 prezzo
 condizione_veicolo
 km_percorsi
 tagliandi
+garanzia
+sinistri
 tipologia_trasmissione
+posti
 carburante
 optional
 classe_emissioni
