@@ -1,0 +1,20 @@
+Modellizzare la struttura di una tabella per memorizzare tutti i dati riguardanti delle auto usate
+messe in vendita da un concessionario.
+
+
+
+numero_telaio(id)
+marca
+modello
+tipologia_veicolo
+data_immatricolazione
+prezzo
+condizione_veicolo
+km_percorsi
+tagliandi
+tipologia_trasmissione
+carburante
+optional
+classe_emissioni
+
+
